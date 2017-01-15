@@ -4,3 +4,8 @@ export enum LanguageSkill{
     Professional,
     Native
 }
+
+export enum LocalizationLanguage{
+    English,
+    Hungarian
+}

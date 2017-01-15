@@ -1,10 +1,9 @@
 import { LocalizedResource } from './localizedresource';
 import { Link } from './types';
-import { Tag } from './tag';
 
-export class Certification{
-    IssuerName: string;
+export class Employer {
+    Name: string;
     Description: LocalizedResource;
-    Url: Link;
-    Tags: Tag[];
+    HomePage: Link;
+    LogoUrl: Link;
 }
