@@ -3,6 +3,7 @@ import transpile from './transpile';
 import processMarkup from './process-markup';
 import processCSS from './process-css';
 import {build} from 'aurelia-cli';
+import {dist} from './dist';
 import * as project from '../aurelia.json';
 
 export default gulp.series(
@@ -12,7 +13,8 @@ export default gulp.series(
     processMarkup,
     processCSS
   ),
-  writeBundles
+  writeBundles,
+  dist
 );
 
 function readProjectConfiguration() {
