@@ -16,7 +16,7 @@ export default gulp.series(
     processCSS
   ),
   writeBundles,
-  prepareMaterialize,
+  //prepareMaterialize,
   prepareFontAwesome,
   dist
 );
@@ -26,5 +26,5 @@ function readProjectConfiguration() {
 }
 
 function writeBundles() {
-  return build.dest("www-root");
+  return build.dest();
 }

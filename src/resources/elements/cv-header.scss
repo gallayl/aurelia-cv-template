@@ -1,11 +1,32 @@
 $margin-inner: 25px;
+$navbar-size: 200px;
 
 md-navbar {
+  margin-bottom: $navbar-size;
+
   nav {
-    height: 200px;
     background-image: url('/assets/bg-head.jpg');
     background-position: center;
     background-size: 100%;
+    height: $navbar-size;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+
+  .button-link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    a {
+      margin: 0 5px;
+
+      i {
+        line-height: inherit;
+      }
+    }
   }
 
   .header-inner {
@@ -15,58 +36,72 @@ md-navbar {
     .head-center {
       flex-grow: 1;
 
-      .social-links {
-        margin-right: $margin-inner;
-        margin-top: $margin-inner;
+      .button-links {
         float: right;
+        margin-right: $margin-inner;
+        margin-top: 3px;
         text-align: right;
 
-        a {
-            margin: 0 5px;
-          i {
-            line-height: inherit;
+        .email,
+        .phone {
+          @media screen and (max-width: 710px) {
+            & {
+              display: none;
+            }
           }
+
         }
       }
     }
 
     .head-left {
       display: block;
+      line-height: normal;
+
+      .button-link {
+        margin-left: 15px;
+        margin-top: 20px;
+      }
 
       .subtitle,
-      .title {
-        padding-left: $margin-inner;
+      .title,
+      .language-selector {
         display: inline-block;
-        width: 100%;
+        margin-left: $margin-inner;
         text-align: left;
         line-height: normal;
         text-shadow: 1px 1px 15px black, 1px 1px 25px black, 1px 1px 35px black;
-
+        width: 100%;
       }
 
       .title {
         font-size: 1.8em;
-        padding-top: $margin-inner;
+        margin-top: $margin-inner;
+      }
+
+      .subtitle {
+        margin-bottom: 20px;
+        margin-top: 20px;
       }
     }
 
     .head-right {
-
+      border-radius: 50%;
+      box-shadow: 0 0 12px 5px black;
+      height: 150px;
       margin-right: $margin-inner;
       margin-top: $margin-inner;
-      border-radius: 50%;
+      min-width: 150px;
       overflow: hidden;
       width: 150px;
-      height: 150px;
-      box-shadow: 0 0 12px 5px black;
 
       &:active {
         box-shadow: 0 0 5px 3px black;
       }
 
       img {
-        width: 100%;
         height: 100%;
+        width: 100%;
       }
     }
 

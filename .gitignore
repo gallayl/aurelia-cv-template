@@ -3,3 +3,7 @@ node_modules
 .DS_STORE
 .vscode
 www-root
+font-awesome
+materialize-css
+fonts
+scripts

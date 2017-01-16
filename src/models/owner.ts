@@ -16,6 +16,11 @@ export class Owner {
     Summary: LocalizedString;
 
     LinkedinProfileUrl: Link;
+    GithubProfileUrl: Link;
+    StackOwerflowProfileUrl: Link;
+    GooglePlusProfileUrl: Link;
+    FacebookProfileUrl: Link;
+    LocationLink: Link;
 
     // Moved to separate service
     // Schools: School[];
