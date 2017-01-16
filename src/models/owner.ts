@@ -2,18 +2,17 @@ import { Hobby } from './hobby';
 import { Project } from './project';
 import { Job } from './job';
 import { School } from './school';
-import { Link } from './types';
-import { LocalizedResource } from './localizedresource';
+import { Link, LocalizedString } from './types';
 
 export class Owner {
     Name: string;
     Email: string;
     Phone: string;
-    Address: LocalizedResource;
+    Address: LocalizedString;
     BirthDate: Date;
     BirthPlace: string;
     PhotoURL: Link;
-    Summary: LocalizedResource;
+    Summary: LocalizedString;
 
     Schools: School[];
     Jobs: Job[];

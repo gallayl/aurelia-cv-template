@@ -1,10 +1,9 @@
-import { LocalizedResource } from './localizedresource';
 import { Tag } from './tag';
-import { Link } from './types';
+import { Link, LocalizedString } from './types';
 
 export class Hobby {
-    Name: LocalizedResource;
-    Description: LocalizedResource;
+    Name: LocalizedString;
+    Description: LocalizedString;
     ImageUrl: Link;
     Link: Link;
     Tags: Tag[];

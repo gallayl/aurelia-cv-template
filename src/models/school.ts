@@ -1,11 +1,10 @@
-import { Link } from './types';
+import { Link, LocalizedString } from './types';
 import { Tag } from './tag';
-import { LocalizedResource } from './localizedresource';
 
 export class School{
-    Name: LocalizedResource;
+    Name: LocalizedString;
     Type: string;
-    Description: LocalizedResource;
+    Description: LocalizedString;
     Homepage: Link;
     Tags: Tag[];
     FromDate: Date;

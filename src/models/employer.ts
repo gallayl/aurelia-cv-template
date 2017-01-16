@@ -1,9 +1,8 @@
-import { LocalizedResource } from './localizedresource';
-import { Link } from './types';
+import { Link, LocalizedString } from './types';
 
 export class Employer {
     Name: string;
-    Description: LocalizedResource;
+    Description: LocalizedString;
     HomePage: Link;
     LogoUrl: Link;
 }

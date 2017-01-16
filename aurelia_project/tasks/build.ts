@@ -4,6 +4,7 @@ import processMarkup from './process-markup';
 import processCSS from './process-css';
 import {build} from 'aurelia-cli';
 import {dist} from './dist';
+import {prepareMaterialize} from './prepareMaterialize'
 import * as project from '../aurelia.json';
 
 export default gulp.series(
@@ -14,6 +15,7 @@ export default gulp.series(
     processCSS
   ),
   writeBundles,
+  prepareMaterialize,
   dist
 );
 

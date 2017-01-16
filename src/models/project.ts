@@ -1,8 +1,8 @@
+import { LocalizedString } from './types';
 import { Tag } from './tag';
-import { LocalizedResource } from './localizedresource';
 
 export class Project{
-    Name: LocalizedResource;
-    Description: LocalizedResource;
+    Name: LocalizedString;
+    Description: LocalizedString;
     Tags: Tag[];
 }
