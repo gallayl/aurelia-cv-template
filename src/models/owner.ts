@@ -15,9 +15,12 @@ export class Owner {
     PhotoURL: Link;
     Summary: LocalizedString;
 
-    Schools: School[];
-    Jobs: Job[];
-    Projects: Project[];
-    Hobbies: Hobby[];
+    LinkedinProfileUrl: Link;
+
+    // Moved to separate service
+    // Schools: School[];
+    // Jobs: Job[];
+    // Projects: Project[];
+    // Hobbies: Hobby[];
 
 }

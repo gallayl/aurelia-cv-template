@@ -13,6 +13,7 @@
     "aurelia-materialize-bridge": "^0.21.0",
     "aurelia-validation": "^1.0.0-beta.1.0.1",
     "bluebird": "^3.4.1",
+    "font-awesome": "^4.7.0",
     "materialize-css": "^0.97.8",
     "requirejs": "^2.3.2",
     "text": "github:requirejs/text#latest"

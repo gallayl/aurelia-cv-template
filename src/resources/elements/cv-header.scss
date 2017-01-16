@@ -14,11 +14,24 @@ md-navbar {
 
     .head-center {
       flex-grow: 1;
+
+      .social-links {
+        margin-right: $margin-inner;
+        margin-top: $margin-inner;
+        float: right;
+        text-align: right;
+
+        a {
+            margin: 0 5px;
+          i {
+            line-height: inherit;
+          }
+        }
+      }
     }
 
     .head-left {
       display: block;
-      text-shadow: 1px 1px 15px black, 1px 1px 25px black, 1px 1px 35px black;
 
       .subtitle,
       .title {
@@ -27,22 +40,13 @@ md-navbar {
         width: 100%;
         text-align: left;
         line-height: normal;
+        text-shadow: 1px 1px 15px black, 1px 1px 25px black, 1px 1px 35px black;
+
       }
 
       .title {
         font-size: 1.8em;
         padding-top: $margin-inner;
-      }
-
-      .socialLinks {
-        margin-left: $margin-inner;
-
-        a {
-            margin-right: 0 5px;
-          i {
-            line-height: inherit;
-          }
-        }
       }
     }
 

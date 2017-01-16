@@ -1,7 +1,7 @@
 <template>
     <require from="../resources/elements/cv-header"></require>
     <require from="./home.css"></require>
-    <cv-header title.bind="Owner.Name" sub-title.bind="Owner.Title", image.bind="Owner.PhotoURL"></cv-header>
+    <cv-header owner.bind="Owner"></cv-header>
     <div class="main-content">
         <md-card id="lipsum">
             <p>

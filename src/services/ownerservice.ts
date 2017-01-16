@@ -20,13 +20,10 @@ export class OwnerService {
             Summary: this.localizations.Get(""),
             BirthDate: new Date("1985-09-25"),
             BirthPlace: "Budapest, Hungary",
-            Hobbies: [],
-            Jobs: this.jobs.GetJobs(),
             Phone: "+36 20 530 7414",
+            
             PhotoURL: "/assets/lalo.jpg",
-            Projects: [],
-            Schools: []
-
+            LinkedinProfileUrl: "https://www.linkedin.com/in/gallay-lajos-3b735185"
         };
     }
 }

@@ -48,9 +48,8 @@
   "dist": {
     "output": "www-root",
     "sources": [
-        "./scripts/**/*",
-        "./index.html",
-        "./assets/**/*"
+      "./index.html",
+      "./fonts/**/*"
     ]
   },
   "build": {
@@ -58,7 +57,7 @@
       {
         "id": "web",
         "displayName": "Web",
-        "output": "scripts",
+        "output": "www-root/scripts",
         "index": "index.html"
       }
     ],
@@ -138,6 +137,14 @@
             "name": "aurelia-validation",
             "path": "../node_modules/aurelia-validation/dist/amd",
             "main": "aurelia-validation"
+          },
+          {
+            "name": "font-awesome",
+            "path": "../node_modules/font-awesome/",
+            "main": "",
+            "resources": [
+              "css/font-awesome.min.css"
+            ]
           }
         ]
       },

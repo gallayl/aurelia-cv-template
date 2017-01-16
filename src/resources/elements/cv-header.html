@@ -3,20 +3,32 @@
   <md-navbar class="header-container">
     <div class="header-inner">
       <div class="head-left">
-        <span class="title">${Title}</span>
-        <span class="subtitle">${SubTitle}</span>
-        <div class="socialLinks">
-          <a md-button="floating: true;" md-waver="color: primary; circle: true;" href="mailto:${ContactMail}">
-            <i class="large material-icons">email</i>
-          </a>
-          <a md-button="floating: true;" md-waver="color: primary; circle: true;">
-            <i class="large material-icons">phone</i>
-          </a>
+        <span class="title">${Owner.Name}</span>
+        <span class="subtitle">${Owner.Title}</span>
+      </div>
+      <div class="head-center">
+        <div class="social-links">
+          <div class="social-link">
+            ${Owner.Email}
+            <a md-button="floating: true;" md-waver="color: primary; circle: true;" href="mailto:${Owner.Email}">
+              <i class="large material-icons">email</i>
+            </a>
+          </div>
+          <div class="social-link">
+            ${Owner.Phone}
+            <a md-button="floating: true;" md-waver="color: primary; circle: true;" title="${Owner.Phone}" href="tel:${Owner.Phone}">
+              <i class="large material-icons">phone</i>
+            </a>
+          </div>
+          <div class="social-link">
+            <a md-button="floating: true;" md-waver="color: primary; circle: true;" title="${Owner.Phone}" target="_blank" href="${Owner.LinkedinProfileUrl}">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="head-center"></div>
       <div class="head-right">
-        <img src="${Image}" alt="User" />
+        <img src="${Owner.PhotoURL}" alt="User" />
       </div>
     </div>
   </md-navbar>
