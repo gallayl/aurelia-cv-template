@@ -1,2 +1,2 @@
 # aurelia-cv-template
-An online CV template using TypeScript, Aurelia.io and Materialize
+A simple online CV template using Aurelia.io, Materialize and FontAwesome written in Typescript / SASS
