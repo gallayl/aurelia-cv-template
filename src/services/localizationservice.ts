@@ -50,6 +50,13 @@ export class LocalizationService {
                 [Language.English, "CV"],
                 [Language.Hungarian, "Önéletrajz"]
             ]
+        },
+        {
+            Key: "owner-title",
+            Values: [
+                [Language.English, "Software Developer"],
+                [Language.Hungarian, "Fejlesztő"]
+            ]
         }
     ];
 

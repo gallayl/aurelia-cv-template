@@ -6,6 +6,7 @@ import { Link, LocalizedString } from './types';
 
 export class Owner {
     Name: string;
+    Title: LocalizedString;
     Email: string;
     Phone: string;
     Address: LocalizedString;

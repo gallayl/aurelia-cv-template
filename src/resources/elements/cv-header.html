@@ -1,8 +1,23 @@
 <template>
+  <require from="./cv-header.css"></require>
   <md-navbar class="header-container">
-    <require from="./cv-header.css"></require>
-    <!--<h1>${Title}</h1>
-
-    <h2>${SubTitle}</h2>-->
+    <div class="header-inner">
+      <div class="head-left">
+        <span class="title">${Title}</span>
+        <span class="subtitle">${SubTitle}</span>
+        <div class="socialLinks">
+          <a md-button="floating: true;" md-waver="color: primary; circle: true;" href="mailto:${ContactMail}">
+            <i class="large material-icons">email</i>
+          </a>
+          <a md-button="floating: true;" md-waver="color: primary; circle: true;">
+            <i class="large material-icons">phone</i>
+          </a>
+        </div>
+      </div>
+      <div class="head-center"></div>
+      <div class="head-right">
+        <img src="${Image}" alt="User" />
+      </div>
+    </div>
   </md-navbar>
 </template>

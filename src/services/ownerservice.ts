@@ -14,6 +14,7 @@ export class OwnerService {
     public GetOwner(): Owner {
         return {
             Name: "Gallay Lajos",
+            Title: this.localizations.Get('owner-title'),
             Address: <LocalizedString>"1144 Budapest, Rákosfalva park 4.",
             Email: "gallay.lajos@gmail.com",
             Summary: this.localizations.Get(""),
@@ -22,7 +23,7 @@ export class OwnerService {
             Hobbies: [],
             Jobs: this.jobs.GetJobs(),
             Phone: "+36 20 530 7414",
-            PhotoURL: "./assets/lalo.jpg",
+            PhotoURL: "/assets/lalo.jpg",
             Projects: [],
             Schools: []
 
