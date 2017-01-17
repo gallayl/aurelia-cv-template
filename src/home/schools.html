@@ -1,0 +1,14 @@
+<template>
+    <md-card md-title.bind="'schools-title' | translate">
+        <div class="collapsible-popout">
+            <ul md-collapsible="accordion.bind: accordion; popout: true;" repeat.for="school of Schools">
+                <li>
+                    <div class="collapsible-header">${school.Name}</div>
+                    <div class="collapsible-body">
+                        <p>${school.Description}</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </md-card>
+</template>

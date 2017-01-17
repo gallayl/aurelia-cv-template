@@ -10,7 +10,7 @@ export class JobService {
     constructor(private localizations: LocalizationService) {
     }
 
-    public GetJobs(): Job[] {
+    public Get(): Job[] {
 
         let jobDigic: Job = {
             Employer: {

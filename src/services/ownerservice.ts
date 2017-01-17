@@ -11,7 +11,7 @@ export class OwnerService {
 
     }
 
-    public GetOwner(): Owner {
+    public Get(): Owner {
         return {
             Name: "Gallay Lajos",
             Title: this.localizations.Get('owner-title'),

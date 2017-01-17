@@ -18,7 +18,7 @@ export class App {
     this.router = router;
     config.title = this.localize.Get('cv-title');
     config.map([
-      { route: ['', 'home'], name: 'home', moduleId: 'home/home', title: `${this.owner.GetOwner().Name}` }
+      { route: ['', 'home'], name: 'home', moduleId: 'home/home', title: `${this.owner.Get().Name}` }
     ]);
   }
 }

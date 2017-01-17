@@ -9,6 +9,6 @@ export class Home{
     public Owner:Owner;
 
     constructor(private owner:OwnerService, private localization: LocalizationService) {
-        this.Owner = owner.GetOwner();
+        this.Owner = owner.Get();
     }
 }

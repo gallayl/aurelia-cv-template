@@ -57,7 +57,14 @@ export class LocalizationService {
                 [Language.English, "Software Developer"],
                 [Language.Hungarian, "Fejlesztő"]
             ]
-        }
+        },
+        {
+            Key: "schools-title",
+            Values: [
+                [Language.English, "Schools"],
+                [Language.Hungarian, "Tanulmányok"]
+            ]
+        },        
     ];
 
 
