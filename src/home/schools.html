@@ -1,14 +1,28 @@
 <template>
+    <require from="./schools.css"></require>
     <md-card md-title.bind="'schools-title' | translate">
         <div class="collapsible-popout">
-            <ul md-collapsible="accordion.bind: accordion; popout: true;" repeat.for="school of Schools">
-                <li>
-                    <div class="collapsible-header">${school.Name}</div>
-                    <div class="collapsible-body">
-                        <p>${school.Description}</p>
+            <ul md-collapsible="accordion: true; popout: true;">
+                <li repeat.for="school of Schools">
+                    <div class="collapsible-header">
+                        <span class="school-name" title.bind="school.Name + ' - ' + school.Type">
+                            <a href="${school.Homepage}" target="_blank" >${school.Name}</a>
+                             - ${school.Type}</span>
+                        <span class="school-duration" title.bind="school.FromDate.getFullYear() + ' - ' + school.UntilDate.getFullYear()"> ${school.FromDate.getFullYear()} - ${school.UntilDate.getFullYear()} </span>
                     </div>
-                </li>
-            </ul>
-        </div>
-    </md-card>
+                    <div class="collapsible-body">
+                        <p class="description"> ${school.Description} </p>
+
+                        <iframe if.bind="school.MapQuery.length" class="mapFrame" 
+                                width="600" 
+                                height="450" 
+                                frameborder="0" 
+                                style="border:0" 
+                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBe7lzmO9QZluA6UzpTRi9RjG8pbwgw740 &q=${school.MapQuery}" 
+                                allowfullscreen="true" />
+</div>
+</li>
+</ul>
+</div>
+</md-card>
 </template>

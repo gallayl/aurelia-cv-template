@@ -64,7 +64,29 @@ export class LocalizationService {
                 [Language.English, "Schools"],
                 [Language.Hungarian, "Tanulmányok"]
             ]
+        },
+        {
+            Key: "school-vocational-generic",
+            Values: [
+                [Language.English, "Vocational"],
+                [Language.Hungarian, "Érettségi"]
+            ]
         },        
+        {
+            Key: "school-okj-general-programming",
+            Values: [
+                [Language.English, "General programming"],
+                [Language.Hungarian, "Általános programozó - OKJ"]
+            ]
+        },
+        {
+            Key: "school-web-development",
+            Values: [
+                [Language.English, "WEB Development"],
+                [Language.Hungarian, "WEB Fejlesztő - OKJ"]
+            ]
+        },        
+        
     ];
 
 

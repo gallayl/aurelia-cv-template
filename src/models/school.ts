@@ -7,6 +7,7 @@ export class School{
     Description: LocalizedString;
     Homepage: Link;
     Tags: Tag[];
+    MapQuery: string;
     FromDate: Date;
     UntilDate: Date;
 }

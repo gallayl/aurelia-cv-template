@@ -16,7 +16,7 @@ export default gulp.series(
     processCSS
   ),
   writeBundles,
-  //prepareMaterialize,
+  prepareMaterialize,
   prepareFontAwesome,
   dist
 );

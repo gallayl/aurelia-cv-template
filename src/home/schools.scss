@@ -1,0 +1,32 @@
+.collapsible-header{
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+
+    .school-duration,
+    .school-name {
+        flex-grow: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .school-duration{
+        text-align: right;
+    }
+}
+
+.collapsible-body {
+
+    display: flex;
+    flex-direction: row;
+
+    .description{
+        flex-grow: 1;
+    }
+
+    iframe {
+        flex-grow: 1;
+        margin: 10px;
+    }
+}
