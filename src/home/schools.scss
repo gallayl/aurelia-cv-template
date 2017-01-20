@@ -1,32 +1,49 @@
-.collapsible-header{
-    white-space: nowrap;
+.collapsible-header {
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+
+  .school-duration,
+  .school-name {
+    flex-grow: 1;
+    text-overflow: ellipsis;
     overflow: hidden;
-    display: flex;
-    flex-direction: row;
+  }
 
-    .school-duration,
-    .school-name {
-        flex-grow: 1;
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
-
-    .school-duration{
-        text-align: right;
-    }
+  .school-duration {
+    text-align: right;
+  }
 }
 
 .collapsible-body {
 
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    .description{
-        flex-grow: 1;
+    @media screen and (max-width: 710px) {
+      display: block;
+    }  
+
+  .description,
+  iframe {
+    @media screen and (max-width: 710px) {
+      display: block;
+      width: 100%;
     }
 
-    iframe {
-        flex-grow: 1;
+  }
+
+  .description {
+    flex-grow: 1;
+    .tags{
         margin: 10px;
     }
+  }
+
+  iframe {
+
+    flex-grow: 1;
+    margin: 10px;
+  }
 }

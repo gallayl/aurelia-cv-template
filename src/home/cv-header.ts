@@ -1,8 +1,8 @@
-import { LocalizationLanguage } from '../../models/enums';
-import { LocalizationService } from '../../services/localizationservice';
-import { Link, LocalizedString } from '../../models/types';
+import { LocalizationLanguage } from '../models/enums';
+import { LocalizationService } from '../services/localizationservice';
+import { Link, LocalizedString } from '../models/types';
 import { bindable, autoinject } from 'aurelia-framework';
-import { Owner } from '../../models/owner';
+import { Owner } from '../models/owner';
 
 @autoinject
 export class CvHeader {

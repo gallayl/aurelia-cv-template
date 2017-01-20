@@ -22,7 +22,7 @@ export class SchoolService {
                     { Name: "JQuery", Url: "" },
                     { Name: "Flash", Url: "" }
                 ],
-                MapQuery: "BMSZC+Verebély+László+Szakgimnáziuma+és+Szakközépiskolája",
+                MapQuery: "Lia+Iskola+Budapest,+Dolgos+utca+7,+1126",
                 Type: this.localization.Get("school-web-development")
             },
             {
@@ -40,7 +40,7 @@ export class SchoolService {
                     { Name: "Photoshop basics", Url: "" },
 
                 ],
-                MapQuery:"", //"BMSZC+Verebély+László+Szakgimnáziuma+és+Szakközépiskolája",
+                MapQuery: "BMSZC+Verebély+László+Szakgimnáziuma+és+Szakközépiskolája",
                 Type: this.localization.Get("school-vocational-generic") + ', ' + this.localization.Get("school-okj-general-programming")
             }
         ]

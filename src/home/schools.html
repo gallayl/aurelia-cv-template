@@ -11,10 +11,15 @@
                         <span class="school-duration" title.bind="school.FromDate.getFullYear() + ' - ' + school.UntilDate.getFullYear()"> ${school.FromDate.getFullYear()} - ${school.UntilDate.getFullYear()} </span>
                     </div>
                     <div class="collapsible-body">
-                        <p class="description"> ${school.Description} </p>
+                        <div class="description"> 
+                            ${school.Description}
+                            <div class="tags">
+                                <span class="tag" repeat.for="tag of school.Tags">${tag.Name}</span>
+                            </div>
+                        </div>
 
                         <iframe if.bind="school.MapQuery.length" class="mapFrame" 
-                                width="600" 
+                                
                                 height="450" 
                                 frameborder="0" 
                                 style="border:0" 
