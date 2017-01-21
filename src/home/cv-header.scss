@@ -9,29 +9,6 @@ md-navbar {
     background-position: center;
     background-size: 100%;
     height: $navbar-size;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-  }
-
-  .button-link {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-    .text{
-        text-shadow: 1px 1px 15px black;
-    }
-
-    a {
-      box-shadow: 1px 1px 3px 0 black;
-      margin: 5px;
-
-      i {
-        line-height: inherit;
-      }
-    }
   }
 
   .header-inner {
@@ -64,18 +41,18 @@ md-navbar {
       display: block;
       line-height: normal;
 
-      .button-link {
+      .button-links {
         margin-left: 15px;
-        margin-top: 20px;
+        margin-top: 10px;
       }
 
       .subtitle,
       .title,
       .language-selector {
         display: inline-block;
+        line-height: normal;
         margin-left: $margin-inner;
         text-align: left;
-        line-height: normal;
         text-shadow: 1px 1px 15px black;
         width: 100%;
       }

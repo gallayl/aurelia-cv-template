@@ -1,3 +1,23 @@
 <template>
-  <h1>${value}</h1>
+  <require from="./google-map.css"></require>
+  <fa-button-link title.bind="Address"
+                  icon-name="fa-map-marker" 
+                  link-url.bind="'#'+Guid">
+  </fa-button-link>
+  <div class="modal-container">
+    <div class="maps-modal" id="${Guid}" md-modal="dismissible: false;">
+      <div class="modal-content">
+        <h4>${Address}</h4>
+        <iframe class="mapFrame" 
+                height="450" 
+                frameborder="0" 
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBe7lzmO9QZluA6UzpTRi9RjG8pbwgw740 &q=${Query}" 
+                allowfullscreen="true"></iframe>
+      </div>
+      <div class="modal-footer">
+        <a click.delegate="agree()" md-button="flat: true;" md-waves="color: accent;" class="modal-action modal-close">${'button-close' | translate}</a>
+      </div>
+    </div>
+  </div>
+
 </template>

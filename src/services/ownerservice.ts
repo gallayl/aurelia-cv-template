@@ -28,8 +28,7 @@ export class OwnerService {
             StackOwerflowProfileUrl: "http://stackoverflow.com/users/7418775/lajos-gallay",
             GooglePlusProfileUrl: "https://plus.google.com/106743540419438515130",
             FacebookProfileUrl: "https://www.facebook.com/lajos.gallay",
-
-            LocationLink: "https://www.google.hu/maps/place/Budapest,+R%C3%A1kosfalva+park,+1144/@47.5070555,19.1421969,17z/data=!3m1!4b1!4m5!3m4!1s0x4741db54c630b6dd:0x4eecd88d98ab6afa!8m2!3d47.5070519!4d19.1443856?hl=en"
+            LocationQuery: "Budapest,+R%C3%A1kosfalva+park"
         };
     }
 }

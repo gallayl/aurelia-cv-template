@@ -1,0 +1,19 @@
+.modal-container {
+
+  .maps-modal {
+    .modal-content{
+      h4{
+        text-align: left;
+        color: #333;
+        text-overflow: ellipsis;
+        overflow: hidden;        
+      }
+
+      .mapFrame{
+        width: 100%;
+      }
+
+    }
+    
+  }
+}

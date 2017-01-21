@@ -85,7 +85,14 @@ export class LocalizationService {
                 [Language.English, "WEB Development"],
                 [Language.Hungarian, "WEB Fejlesztő - OKJ"]
             ]
-        },        
+        },
+        {
+            Key: "button-close",
+            Values: [
+                [Language.English, "Close"],
+                [Language.Hungarian, "Bezár"]
+            ]
+        },            
         
     ];
 

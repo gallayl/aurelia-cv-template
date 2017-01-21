@@ -1,9 +1,12 @@
 <template>
+  <require from="./fa-button-link.css" as="scoped"></require>
+  <span class="button-link">
   <a md-button="floating: true;" 
       md-waver="color: primary; circle: true;" 
-      title="${linkTitle}" 
-      target="_blank" 
-      href="${linkUrl}">
+      title.bind="title" 
+      target.bind="target" 
+      href.bind="linkUrl">
     <i class="fa ${iconName}" aria-hidden="true"></i>
   </a>
+  </span>
 </template>

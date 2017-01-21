@@ -20,7 +20,7 @@ export class Owner {
     StackOwerflowProfileUrl: Link;
     GooglePlusProfileUrl: Link;
     FacebookProfileUrl: Link;
-    LocationLink: Link;
+    LocationQuery: Link;
 
     // Moved to separate service
     // Schools: School[];

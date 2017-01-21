@@ -1,5 +1,5 @@
 <template>
-  <require from="./cv-header.css"></require>
+  <require from="./cv-header.css" as="scoped"></require>
   <md-navbar class="header-container">
     <div class="header-inner">
       <div class="head-left">
@@ -9,24 +9,29 @@
           <a href="" click.delegate="setLanguageEnglish()">English</a> | 
           <a href="" click.delegate="setLanguageHungarian()">Magyar</a>
         </div>
-          <div class="button-link">
-            <fa-button-link link-title="Linkedin" 
+          <div class="button-links">
+            <fa-button-link title="Linkedin" 
+                            target="_blank"
                             icon-name="fa-linkedin" 
                             link-url.bind="Owner.LinkedinProfileUrl">
             </fa-button-link>
-            <fa-button-link link-title="Github" 
+            <fa-button-link title="Github" 
+                            target="_blank"            
                             icon-name="fa-github" 
                             link-url.bind="Owner.GithubProfileUrl">
             </fa-button-link>
-            <fa-button-link link-title="Stack Owerflow" 
+            <fa-button-link title="Stack Owerflow" 
+                            target="_blank"            
                             icon-name="fa-stack-overflow" 
                             link-url.bind="Owner.StackOwerflowProfileUrl">
             </fa-button-link>
-            <fa-button-link link-title="Google Plus" 
+            <fa-button-link title="Google Plus" 
+                            target="_blank"            
                             icon-name="fa-google-plus" 
                             link-url.bind="Owner.GooglePlusProfileUrl">
             </fa-button-link>
-            <fa-button-link link-title="Facebook" 
+            <fa-button-link title="Facebook" 
+                            target="_blank"            
                             icon-name="fa-facebook" 
                             link-url.bind="Owner.FacebookProfileUrl">
             </fa-button-link>            
@@ -36,14 +41,14 @@
         <div class="button-links">
           <div class="button-link">
             <span class="text email">${Owner.Email}</span>
-            <fa-button-link link-title.bind="Owner.Email"
+            <fa-button-link title.bind="Owner.Email"
                             icon-name="fa-envelope" 
                             link-url.bind="'mailto:'+ Owner.Email">
             </fa-button-link>
           </div>
           <div class="button-link">
             <span class="text phone">${Owner.Phone}</span>
-            <fa-button-link link-title.bind="Owner.Phone" 
+            <fa-button-link title.bind="Owner.Phone" 
                             icon-name="fa-phone" 
                             link-url.bind="'tel:'+ Owner.Phone">
             </fa-button-link>
@@ -52,10 +57,8 @@
 
           <div class="button-link">
             <span class="text address">${Owner.Address}</span>
-            <fa-button-link link-title.bind="Owner.Address" 
-                            icon-name="fa-map-marker" 
-                            link-url.bind="Owner.LocationLink">
-            </fa-button-link>
+            <google-map address.bind="Owner.Address"
+                        query.bind="Owner.LocationQuery"></google-map>
           </div>          
         </div>
       </div>
