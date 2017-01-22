@@ -1,7 +1,6 @@
 <template>
     <require from="./languages.css"></require>
-    <md-card md-title.bind="'languages-title' | translate" md-image="./assets/dev-header-2.jpg">
-
+    <md-card class="print-one-page" md-title.bind="'languages-title' | translate" md-image="./assets/dev-header-2.jpg">
         <md-collection>
             <md-collection-item repeat.for="language of Languages" class="language-container">
                 <span text-content.bind="language.Name | translate"></span>

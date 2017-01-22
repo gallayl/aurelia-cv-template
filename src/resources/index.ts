@@ -1,3 +1,4 @@
+import { Hobbies } from './../home/hobbies';
 import { FrameworkConfiguration } from 'aurelia-framework';
 import { TranslateValueConverter } from './value-converters/translate';
 
@@ -13,5 +14,6 @@ export function configure(config: FrameworkConfiguration) {
     "../home/jobs",
     "../home/languages",
     "../home/skills",
+    "../home/hobbies",
   ]);
 }

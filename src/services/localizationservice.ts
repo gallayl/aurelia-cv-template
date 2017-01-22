@@ -286,6 +286,55 @@ export class LocalizationService {
                 [Language.Hungarian, "Feljesztői környezetek"]
             ]
         },
+        {
+            Key: "hobbies-title",
+            Values: [
+                [Language.English, "Hobbies"],
+                [Language.Hungarian, "Hobbik"]
+            ]
+        },
+{
+            Key: "hobby-music",
+            Values: [
+                [Language.English, "Music"],
+                [Language.Hungarian, "Music"]
+            ]
+        },
+        {
+            Key: "hobby-bands",
+            Values: [
+                [Language.English, "Bands"],
+                [Language.Hungarian, "Bandák"]
+            ]
+        },
+        {
+            Key: "hobby-iot",
+            Values: [
+                [Language.English, "IOT projects"],
+                [Language.Hungarian, "IOT Projektek"]
+            ]
+        },
+        {
+            Key: "hobby-books",
+            Values: [
+                [Language.English, "Books"],
+                [Language.Hungarian, "Könyvek"]
+            ]
+        },
+        {
+            Key: "hobby-gaming",
+            Values: [
+                [Language.English, "PC Gaming"],
+                [Language.Hungarian, "PC Játékok"]
+            ]
+        },
+        {
+            Key: "hobby-opensource",
+            Values: [
+                [Language.English, "Open source development"],
+                [Language.Hungarian, "Nyílt forráskódú fejlesztések"]
+            ]
+        },        
     ];
 
     public Get(key: string): LocalizedString {

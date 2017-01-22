@@ -87,6 +87,8 @@ md-navbar {
       }
 
       img {
+        will-change: initial;
+        transition: 0ms;
         height: 100%;
         width: 100%;
       }

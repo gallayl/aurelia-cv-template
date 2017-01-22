@@ -20,14 +20,13 @@ export class SkillService {
                 Name: "skill-frameworks-and-libraries",
                 Tags: [
                     { Name: ".NET", Url: "https://www.microsoft.com/net" },
-                    { Name: "ASP.NET MVC", Url: "https://www.asp.net/mvc/mvc4" },
-                    { Name: "ASP.NET Web API", Url: "https://www.asp.net/web-api" },
+                    { Name: "MVC", Url: "https://www.asp.net/mvc/mvc4" },
+                    { Name: "Web API", Url: "https://www.asp.net/web-api" },
                     { Name: "Entity Framework", Url: "https://www.asp.net/entity-framework" },
                     { Name: "Angular2", Url: "https://angular.io" },
                     { Name: "Aurelia", Url: "https://aurelia.io" },
                     { Name: "Kendo UI", Url: "http://www.telerik.com/kendo-ui" },                    
                     { Name: "JQuery", Url: "https://jquery.com" },
-                    { Name: "JQuery UI", Url: "https://jqueryui.com" },
                 ]
             },            
             {

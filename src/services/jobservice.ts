@@ -41,14 +41,12 @@ export class JobService {
                     Description: "digic-project-DPS-description",
                     Tags: [
                         { Name: "ASP.NET", Url: "https://www.asp.net/" },
-                        { Name: "Web API", Url: "https://www.asp.net/web-api" },
-                        { Name: "Entity Framework", Url: "https://www.asp.net/entity-framework" },
+                        { Name: "EF6", Url: "https://www.asp.net/entity-framework" },
                         { Name: "OData V4", Url: "http://www.odata.org/" },
                         { Name: "SignalR", Url: "https://www.asp.net/signalr" },
                         { Name: "Typescript", Url: "https://www.typescriptlang.org/" },
                         { Name: "Angular2", Url: "https://angularjs.org/" },
                         { Name: "Angular Material", Url: "https://material.angular.io/" },
-                        { Name: "SASS", Url: "http://sass-lang.com/" },
                     ]
                 },
                 {
@@ -56,13 +54,11 @@ export class JobService {
                     Description: "digic-project-TER-description",
                     Tags: [
                         { Name: "ASP.NET", Url: "https://www.asp.net/" },
-                        { Name: "Web API", Url: "https://www.asp.net/web-api" },
-                        { Name: "Entity Framework", Url: "https://www.asp.net/entity-framework" },
+                        { Name: "EF6", Url: "https://www.asp.net/entity-framework" },
                         { Name: "OData V4", Url: "http://www.odata.org/" },
                         { Name: "Typescript", Url: "https://www.typescriptlang.org/" },
                         { Name: "Aurelia", Url: "http://aurelia.io/" },
                         { Name: "Aurelia Materialize Bridge", Url: "https://github.com/aurelia-ui-toolkits/aurelia-materialize-bridge" },
-                        { Name: "SASS", Url: "http://sass-lang.com/" },
                     ]
                 }
             ],

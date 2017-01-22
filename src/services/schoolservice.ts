@@ -51,7 +51,7 @@ export class SchoolService {
                     { Name: "Delphi", Url: "https://en.wikipedia.org/wiki/Delphi_(programming_language)" },
                     { Name: "PHP", Url: "https://secure.php.net/" },
                     { Name: "MySQL", Url: "https://www.mysql.com/" },
-                    { Name: "Photoshop basics", Url: "http://www.adobe.com/products/photoshopfamily.html" },
+                    { Name: "Photoshop", Url: "http://www.adobe.com/products/photoshopfamily.html" },
 
                 ],
                 LocationQuery: "BMSZC+Verebély+László+Szakgimnáziuma+és+Szakközépiskolája",

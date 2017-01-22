@@ -1,6 +1,10 @@
 .tags {
   .tag {
-    margin: 15px 10px 5px 0;
+    margin: 8px 10px 0 0;
     display: inline-block;
+  }
+
+  .tag-nolink{
+    color: #8989c3;
   }
 }

@@ -1,16 +1,28 @@
 @media print {
-  
-  .main-content{
-	  padding: 0 !important;
+  body,
+  html {
+    background: transparent !important;
   }
-  
+
+  .card-content {
+    padding: 0 !important;
+  }
+
   .no-print,
   .no-print * {
     display: none !important;
   }
 
+  .collapsible-popout > ul > li {
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
   .collapsible-body {
     display: block !important;
+    box-shadow: 0 0 0 transparent !important;
+    border: none !important;
   }
 
   .print-one-page {

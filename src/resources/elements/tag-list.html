@@ -1,6 +1,9 @@
 <template>
   <require from="./tag-list.css"></require>
   <div class="tags">
-    <a class="tag" href.bind="tag.Url" target="_blank" repeat.for="tag of tags">${tag.Name}</span>
+    <span class="tag" repeat.for="tag of tags">
+      <a if.bind="tag.Url && tag.Url.length" class="tag" href.bind="tag.Url" target="_blank"> ${tag.Name} </a>
+      <span if.bind="!tag.Url || !tag.Url.length" class="tag-nolink" > ${tag.Name} </span>
+    </span>
   </div>
 </template>
