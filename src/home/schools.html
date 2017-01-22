@@ -6,16 +6,17 @@
                 <li repeat.for="school of Schools">
                     <div class="collapsible-header">
                         <span class="school-name" title.bind="school.Name + ' - ' + school.Type">
-                            <a href="${school.Homepage}" target="_blank" >${school.Name}</a>
+                            <strong>${school.Name}</strong>
                              - ${school.Type}</span>
                         <span class="school-duration" title.bind="school.FromDate.getFullYear() + ' - ' + school.UntilDate.getFullYear()"> ${school.FromDate.getFullYear()} - ${school.UntilDate.getFullYear()} </span>
                     </div>
                     <div class="collapsible-body">
-                        <div class="address ">
-                            <google-map item.bind="school"></google-map> ${school.Address}
+                        <div class="address right">
+                            <google-map item.bind="school"></google-map>
+                            <span class="address-name">${school.Address}</span>
                         </div>
                         <div class="homepage">
-                            <fa-button-link icon-name="fa-external-link" link-url.bind="school.HomepageUrl" title.bind="school.HomepageUrl" target="_blank"></fa-button-link> <a href.bind="school.HomepageUrl" target="_blank">${school.HomepageUrl}</a>
+                            <a href.bind="school.HomepageUrl" target="_blank">${school.HomepageUrl}</a>
                         </div>
                         <div class="description">
                             ${school.Description}

@@ -61,8 +61,8 @@ export class LocalizationService {
         {
             Key: "schools-title",
             Values: [
-                [Language.English, "Schools"],
-                [Language.Hungarian, "Tanulmányok"]
+                [Language.English, "Schools and education"],
+                [Language.Hungarian, "Oktatás, tanulmányok"]
             ]
         },
         {
@@ -75,14 +75,14 @@ export class LocalizationService {
         {
             Key: "school-okj-general-programming",
             Values: [
-                [Language.English, "General programming"],
+                [Language.English, "General programming - NQR"],
                 [Language.Hungarian, "Általános programozó - OKJ"]
             ]
         },
         {
             Key: "school-web-development",
             Values: [
-                [Language.English, "WEB Development"],
+                [Language.English, "WEB Development - NQR"],
                 [Language.Hungarian, "WEB Fejlesztő - OKJ"]
             ]
         },

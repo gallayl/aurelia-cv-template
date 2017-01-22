@@ -17,19 +17,22 @@
 }
 
 .collapsible-body {
+  padding: 15px;
+
   .address {
+    .address-name {
+      @media screen and (max-width: 700px) {
+        display: none;
+      }
+    }
+
     google-map {
       display: inline-block;
     }
   }
 
-  .tags{
-    padding: 20px;
-
-    .tag{
-      margin: 0 5px;
+      a:hover{
       text-decoration: underline;
-      color: cornflowerblue;
     }
-  }
+
 }

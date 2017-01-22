@@ -1,5 +1,6 @@
 <template>
+  <require from="./tag-list.css"></require>
   <div class="tags">
-    <span class="tag" repeat.for="tag of tags">${tag.Name}</span>
+    <a class="tag" href.bind="tag.Url" target="_blank" repeat.for="tag of tags">${tag.Name}</span>
   </div>
 </template>
