@@ -12,9 +12,9 @@ export class SchoolService {
                 UntilDate: new Date("2015-03-01"),
                 Homepage: "https://www.microsoft.com/en-us/learning/exam-70-480.aspx",
                 Tags: [
-                    { Name: "HTML5", Url: "" },
-                    { Name: "JavaScript", Url: "" },
-                    { Name: "CSS3", Url: "" },
+                    { Name: "HTML5", Url: "https://en.wikipedia.org/wiki/HTML5" },
+                    { Name: "JavaScript", Url: "https://en.wikipedia.org/wiki/JavaScript" },
+                    { Name: "CSS3", Url: "https://developer.mozilla.org/en/docs/Web/CSS/CSS3" },
                 ],
                 LocationQuery: "Budapest,+Budafoki+út+56,",
                 Address: "1117 Budapest, Budafoki út 56.",

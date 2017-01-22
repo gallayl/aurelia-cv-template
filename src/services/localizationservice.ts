@@ -135,8 +135,8 @@ export class LocalizationService {
         {
             Key: "digic-project-TER-description",
             Values: [
-                [Language.English, "A TER (Teljesítmény Értékelési Rendszer) a vállalat belső fejlesztésű, egyedi folyamatokra épülő teljesítmény értékelési rendszere."],
-                [Language.Hungarian, "The TER (Performance Review System) is the company's own employee rating system."]
+                [Language.English, "The TER (Performance Review System) is the company's own employee rating system."],
+                [Language.Hungarian, "A TER (Teljesítmény Értékelési Rendszer) a vállalat belső fejlesztésű, egyedi folyamatokra épülő teljesítmény értékelési rendszere."]
             ]
         },
         {

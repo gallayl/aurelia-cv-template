@@ -5,7 +5,7 @@ md-card > .au-target.card > .card-image {
 .collapsible-header {
   white-space: nowrap;
   overflow: hidden;
-  display: flex;
+  display: flex !important;
   flex-direction: row;
 
   .school-duration,
@@ -13,6 +13,10 @@ md-card > .au-target.card > .card-image {
     flex-grow: 1;
     text-overflow: ellipsis;
     overflow: hidden;
+  }
+
+  .separator{
+    flex-grow: 1;
   }
 
   .school-duration {

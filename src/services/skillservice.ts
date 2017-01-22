@@ -41,8 +41,7 @@ export class SkillService {
                 Tags: [
                     { Name: "Visual Studio 2013-2017RC", Url: "https://www.visualstudio.com/" },
                     { Name: "Visual Studio Code", Url: "https://code.visualstudio.com/" },
-                    { Name: "WebStorm", Url: "https://www.jetbrains.com/webstorm/" },
-                    { Name: "Visual Studio Code", Url: "https://code.visualstudio.com/" },
+                    { Name: "WebStorm", Url: "https://www.jetbrains.com/webstorm/" }
                 ]
             },
             {
