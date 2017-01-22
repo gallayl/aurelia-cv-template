@@ -66,6 +66,13 @@ export class LocalizationService {
             ]
         },
         {
+            Key: "print",
+            Values: [
+                [Language.English, "Print"],
+                [Language.Hungarian, "Nyomtatás"]
+            ]
+        },        
+        {
             Key: "schools-title",
             Values: [
                 [Language.English, "Schools and education"],

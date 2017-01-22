@@ -89,7 +89,8 @@ export class JobService {
                 { Name: "Lucene.NET", Url: "https://lucenenet.apache.org/" },
                 { Name: "OData", Url: "http://www.odata.org/" },
                 { Name: "SignalR", Url: "https://www.asp.net/signalr" },
-                { Name: "Kendo UI", Url: "http://www.telerik.com/kendo-ui" }
+                { Name: "Kendo UI", Url: "http://www.telerik.com/kendo-ui" },
+                { Name: "Scrum", Url: "http://scrum.org" }
             ],
         }
 

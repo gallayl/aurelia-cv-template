@@ -22,7 +22,7 @@ export class SchoolService {
                     { Name: "CSS3", Url: "" },
                 ],
                 LocationQuery: "Budapest,+Budafoki+út+56,",
-                Address: "1117 Budapest, Budafoki út 56. 3. emelet",
+                Address: "1117 Budapest, Budafoki út 56.",
                 Type: "Programming in HTML5 with JavaScript and CSS3",
                 HomepageUrl:"https://www.training360.com/"
             },

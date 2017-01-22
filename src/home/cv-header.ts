@@ -19,6 +19,10 @@ export class CvHeader {
     window.location.reload(); //todo: fixme;
   }
 
+  print(){
+    window.print();
+  }
+
   constructor(private localization: LocalizationService) {
     
   }
