@@ -1,0 +1,15 @@
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+
+	.collapsible-body{
+		display: block !important;
+	}
+
+	md-collapsible{
+		page-break-inside: avoid;
+	}
+}

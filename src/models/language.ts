@@ -1,7 +1,7 @@
 import { LocalizedString } from './types';
-import { LanguageSkill } from './enums';
+import { LanguageSkill } from './types';
 
 export class Language {
     Name: LocalizedString;
-    Level: LanguageSkill
+    Level: LanguageSkill;
 }

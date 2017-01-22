@@ -1,12 +1,7 @@
 import { Link } from '../models/types';
-import { LocalizationService } from './localizationservice';
 import { School } from '../models/school';
-import { autoinject } from 'aurelia-framework';
 
-@autoinject
 export class SchoolService {
-
-    constructor(private localization: LocalizationService) { }
 
     public Get(): School[] {
         return [
@@ -23,7 +18,7 @@ export class SchoolService {
                 ],
                 LocationQuery: "Budapest,+Budafoki+út+56,",
                 Address: "1117 Budapest, Budafoki út 56.",
-                Type: "Programming in HTML5 with JavaScript and CSS3",
+                Type: "school-ms70-480",
                 HomepageUrl:"https://www.training360.com/"
             },
             {
@@ -41,7 +36,7 @@ export class SchoolService {
                 ],
                 LocationQuery: "Lia+Iskola+Budapest,+Dolgos+utca+7,+1126",
                 Address: "1126 Budapest, Dolgos utca 7",
-                Type: this.localization.Get("school-web-development"),
+                Type: "school-web-development",
                 HomepageUrl:"http://www.liaiskola.hu/"
             },
             {
@@ -61,7 +56,7 @@ export class SchoolService {
                 ],
                 LocationQuery: "BMSZC+Verebély+László+Szakgimnáziuma+és+Szakközépiskolája",
                 Address: "1139 Budapest, Üteg u. 15",
-                Type: this.localization.Get("school-vocational-generic") + ', ' + this.localization.Get("school-okj-general-programming"),
+                Type: "school-vocational-generic, school-okj-general-programming",
                 HomepageUrl:"http://www.verebelyszki.hu/"
             }
         ]

@@ -1,11 +1,16 @@
 <template>
-    <require from="./cv-header"></require>
-    <require from="./home.css" as="scoped"></require>
+    <!--<require from="./cv-header"></require>
     <require from="./schools"></require>
     <require from="./jobs"></require>
+    <require from="./languages"></require>    
+    <require from="./skills"></require>-->
     <cv-header owner.bind="Owner"></cv-header>
+
+    <require from="./home.css" as="scoped"></require>
     <div class="main-content">
         <works></works>
         <schools></schools>
+        <languages></languages>
+        <skills></skills>
     </div>
 </template>

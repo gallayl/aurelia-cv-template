@@ -210,7 +210,8 @@
               "slider/slider.css",
               "switch/switch.css",
               "switch/switch.html",
-              "well/md-well.html"
+              "well/md-well.html",
+              "index.js"
             ]
           }
         ]

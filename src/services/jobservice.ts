@@ -7,7 +7,7 @@ import { autoinject, Aurelia } from 'aurelia-framework';
 @autoinject
 export class JobService {
 
-    constructor(private localizations: LocalizationService) {
+    constructor() {
     }
 
     public Get(): Job[] {
@@ -15,9 +15,9 @@ export class JobService {
         let jobDigic: Job = {
             Employer: {
                 Name: <LocalizedString>"Digic Pictures",
-                Description: this.localizations.Get("employer-digic-description"),
+                Description: "employer-digic-description",
                 HomePage: "http://digicpictures.com",
-                LogoUrl: "/assets/digic-logo.png"
+                LogoUrl: "./assets/digic-logo.png"
             },
             Address: "Budapest, H-1031 Graphisoft Park Hz. Záhony utca 7.",
             LocationQuery: "Graphisoft+Park+Kft.",
@@ -28,7 +28,7 @@ export class JobService {
             Projects: [
                 {
                     Name: "dProject",
-                    Description: this.localizations.Get("digic-project-dProject-description"),
+                    Description: "digic-project-dProject-description",
                     Tags: [
                         { Name: "WinForms", Url: "https://en.wikipedia.org/wiki/Windows_Forms" },
                         { Name: "PostgreSQL", Url: "https://www.postgresql.org/" },
@@ -38,7 +38,7 @@ export class JobService {
                 },
                 {
                     Name: "DPS",
-                    Description: this.localizations.Get("digic-project-DPS-description"),
+                    Description: "digic-project-DPS-description",
                     Tags: [
                         { Name: "ASP.NET", Url: "https://www.asp.net/" },
                         { Name: "Web API", Url: "https://www.asp.net/web-api" },
@@ -53,7 +53,7 @@ export class JobService {
                 },
                 {
                     Name: "TER",
-                    Description: this.localizations.Get("digic-project-TER-description"),
+                    Description: "digic-project-TER-description",
                     Tags: [
                         { Name: "ASP.NET", Url: "https://www.asp.net/" },
                         { Name: "Web API", Url: "https://www.asp.net/web-api" },
@@ -66,15 +66,15 @@ export class JobService {
                     ]
                 }
             ],
-            Responsibilities: this.localizations.Get("job-digic-responsibilities")
+            Responsibilities: "job-digic-responsibilities"
         };
 
         let jobSenseNet: Job = {
             Employer: {
                 Name: "Sense/NET",
-                Description: this.localizations.Get("employer-sensenet-description"),
+                Description: "employer-sensenet-description",
                 HomePage: "http://sensenet.com",
-                LogoUrl: "/assets/sensenet-logo.png"
+                LogoUrl: "./assets/sensenet-logo.png"
             },
             Title: "Frontend developer",
             FromDate: new Date("2014-05-01"),
@@ -82,7 +82,7 @@ export class JobService {
             Address: "1117 Budapest, Infopark sétány 1",
             LocationQuery: "Budapest,+Infopark+stny.+1,+1117",
             Projects: [],
-            Responsibilities: this.localizations.Get("job-sensenet-responsibilities"),
+            Responsibilities: "job-sensenet-responsibilities",
             Tags: [
                 { Name: "Sense/NET API", Url: "http://www.sensenet.com/" },
                 { Name: "ASP.NET MVC", Url: "http://www.asp.net/mvc" },
@@ -99,7 +99,7 @@ export class JobService {
                 Name: "Tesco Stores Ltd. / PartnerSys ZRt.",
                 Description: "",
                 HomePage: "http://tesco.hu",
-                LogoUrl: "/assets/tesco-logo.png"
+                LogoUrl: "./assets/tesco-logo.png"
             },
             FromDate: new Date("2010-09-01"),
             UntilDate: new Date("2014-05-01"),
@@ -108,7 +108,7 @@ export class JobService {
             Projects: [
                 {
                     Name: "IT Requests",
-                    Description: this.localizations.Get("tesco-project-itr-description"),
+                    Description: "tesco-project-itr-description",
                     Tags: [
                         { Name: "PHP", Url: "https://secure.php.net/" },
                         { Name: "MySQL", Url: "https://www.mysql.com/" },
@@ -119,7 +119,7 @@ export class JobService {
                 },
                 {
                     Name: "PhoneCosts",
-                    Description: this.localizations.Get("tesco-project-phone-description"),
+                    Description: "tesco-project-phone-description",
                     Tags: [
                         { Name: "ASP.NET MVC", Url: "http://www.asp.net/mvc" },
                         { Name: "Entity Framework", Url: "https://www.asp.net/entity-framework" },
@@ -128,7 +128,7 @@ export class JobService {
                 },
                 {
                     Name: "PoolCars",
-                    Description: this.localizations.Get("tesco-project-phone-description"),
+                    Description: "tesco-project-phone-description",
                     Tags: [
                         { Name: "ASP.NET MVC", Url: "http://www.asp.net/mvc" },
                         { Name: "Entity Framework", Url: "https://www.asp.net/entity-framework" },
@@ -136,7 +136,7 @@ export class JobService {
                     ]
                 }                            
             ],
-            Responsibilities: this.localizations.Get("job-tesco-responsibilities"),
+            Responsibilities: "job-tesco-responsibilities",
             Tags: [],
             Title: "IT Support specialist / User Admin / Web developer"
         }

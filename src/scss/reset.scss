@@ -69,15 +69,3 @@ html, body{
 body{
 	min-width: 530px;
 }
-
-@media print
-{    
-    .no-print, .no-print *
-    {
-        display: none !important;
-    }
-
-	.collapsible-body{
-		display: block !important;
-	}
-}

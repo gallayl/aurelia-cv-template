@@ -10,7 +10,8 @@ export class DateRangeValueConverter {
   }
   
   toView(value:Date, until?: Date) {
-    return value.getFullYear() + ((until!=null) ? ` - ${until.getFullYear()}` : ` - ${this.localizationService.Get("date-now")}`);
+    let dateNow = this.localizationService.Get("date-now");
+    return value.getFullYear() + ((until!=null) ? ` - ${until.getFullYear()}` : ` - ${dateNow}`);
   }
 }
 

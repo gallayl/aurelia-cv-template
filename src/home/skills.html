@@ -1,27 +1,16 @@
 <template>
     <require from="./skills.css"></require>
-    <md-card md-title.bind="'skills-title' | translate" md-image="/assets/dev-header-3.jpg">
+    <md-card md-title.bind="'skills-title' | translate" md-image="./assets/dev-header-3.jpg">
         <div class="collapsible-popout">
-            <ul md-collapsible="accordion: false; popout: true;">
-                <li repeat.for="school of Schools">
-                    <div class="collapsible-header">
-                        <span class="school-name" title.bind="school.Name + ' - ' + school.Type">
-                            <strong>${school.Name}</strong>
-                             - ${school.Type}</span>
-                        <span class="school-duration" title.bind="school.FromDate | dateRange:school.UntilDate"> ${school.FromDate | dateRange:school.UntilDate} </span>
+            <ul md-collapsible="">
+                <li repeat.for="skill of Skills">
+                    <div class="collapsible-header active">
+                        <span class="skill-name" title.bind="skill.Name | translate">
+                            ${skill.Name  | translate}
+                        </span>
                     </div>
                     <div class="collapsible-body">
-                        <div class="address right">
-                            <google-map item.bind="school"></google-map>
-                            <span class="address-name">${school.Address}</span>
-                        </div>
-                        <div class="homepage">
-                            <a href.bind="school.HomepageUrl" target="_blank">${school.HomepageUrl}</a>
-                        </div>
-                        <div class="description">
-                            ${school.Description}
-                        </div>
-                        <tag-list tags.bind="school.Tags"></tag-list>
+                        <tag-list tags.bind="skill.Tags"></tag-list>
                     </div>
                 </li>
             </ul>

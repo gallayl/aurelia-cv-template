@@ -13,7 +13,6 @@ export class Owner implements IHasLocation {
     BirthDate: Date;
     BirthPlace: string;
     PhotoURL: Link;
-    Summary: LocalizedString;
 
     LinkedinProfileUrl: Link;
     GithubProfileUrl: Link;

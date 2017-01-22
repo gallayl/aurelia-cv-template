@@ -4,12 +4,12 @@
     <div class="header-inner">
       <div class="head-left">
         <span class="title">${Owner.Name}</span>
-        <span class="subtitle">${Owner.Title}</span>
+        <span class="subtitle">${Owner.Title | translate }</span>
         <div class="language-selector no-print">
           <a href="" click.delegate="setLanguageEnglish()">English</a> | 
           <a href="" click.delegate="setLanguageHungarian()">Magyar</a> | 
-          <a href="/assets/cv_hu.pdf">Letöltés</a> | 
-          <a href="/assets/cv_hu.pdf">Download</a> |
+          <a href="./assets/cv_hu.pdf">Letöltés</a> | 
+          <a href="./assets/cv_hu.pdf">Download</a> |
           <a href="#" click.delegate="print()">${'print' | translate}</a>
         </div>
           <div class="button-links no-print">

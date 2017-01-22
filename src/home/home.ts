@@ -1,14 +1,17 @@
+import { LanguageService } from './../services/languagesservice';
 import { LocalizationService } from '../services/localizationservice';
 import { Owner } from '../models/owner';
 import { OwnerService } from '../services/ownerservice';
-import {autoinject} from 'aurelia-framework';
+import {autoinject, bindable} from 'aurelia-framework';
 
 @autoinject
 export class Home{
 
-    public Owner:Owner;
+    @bindable public Owner:Owner;
 
-    constructor(private owner:OwnerService, private localization: LocalizationService) {
+    constructor(private owner:OwnerService,
+                private localization: LocalizationService,
+                private languageService: LanguageService) {
         this.Owner = owner.Get();
     }
 }

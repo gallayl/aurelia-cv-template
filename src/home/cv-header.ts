@@ -23,8 +23,6 @@ export class CvHeader {
     window.print();
   }
 
-  constructor(private localization: LocalizationService) {
-    
-  }
+  constructor(private localization: LocalizationService) { }
 }
 
