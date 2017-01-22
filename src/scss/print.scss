@@ -1,15 +1,19 @@
-@media print
-{    
-    .no-print, .no-print *
-    {
-        display: none !important;
-    }
+@media print {
+  
+  .main-content{
+	  padding: 0 !important;
+  }
+  
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
 
-	.collapsible-body{
-		display: block !important;
-	}
+  .collapsible-body {
+    display: block !important;
+  }
 
-	md-collapsible{
-		page-break-inside: avoid;
-	}
+  .print-one-page {
+    page-break-inside: avoid;
+  }
 }

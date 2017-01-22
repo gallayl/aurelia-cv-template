@@ -4,7 +4,7 @@
     <md-card md-title.bind="'jobs-title' | translate" md-image="./assets/dev-header.jpg">
         <div class="collapsible-popout jobs-container">
             <ul md-collapsible="accordion: false; popout: true;">
-                <li repeat.for="job of Jobs" class="job-container">
+                <li repeat.for="job of Jobs" class="job-container print-one-page">
                     <div class="collapsible-header">
                         <span class="job-name" title.bind="job.Employer.Name + ' - ' + job.Title">
                             <strong>${job.Employer.Name}</strong>
