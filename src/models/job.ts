@@ -4,9 +4,9 @@ import {Employer} from './employer';
 
 export class Job {
     Employer: Employer;
-    From: Date;
-    Until?: Date;
-    JobTitle: LocalizedString;
+    FromDate: Date;
+    UntilDate?: Date;
+    Title: LocalizedString;
     Responsibilities: LocalizedString;
     Projects: Project[]
 }

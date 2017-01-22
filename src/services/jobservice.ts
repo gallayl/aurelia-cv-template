@@ -19,9 +19,9 @@ export class JobService {
                 HomePage: "http://digicpictures.com",
                 LogoUrl: "http://"
             },
-            From: new Date("2015-10-00"),
-            Until: null,
-            JobTitle: this.localizations.Get("job-digic-title"),
+            FromDate: new Date("2015-10-01"),
+            UntilDate: null,
+            Title: "Production developer",
             Projects: [
                 {
                     Name: "dProject",

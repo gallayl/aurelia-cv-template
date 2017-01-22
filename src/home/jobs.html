@@ -1,0 +1,31 @@
+<template>
+    <require from="./jobs.css"></require>
+    <md-card md-title.bind="'jobs-title' | translate">
+        <div class="collapsible-popout">
+            <ul md-collapsible="accordion: true; popout: true;">
+                <li repeat.for="job of Jobs">
+                    <div class="collapsible-header">
+                        <span class="job-name" title.bind="job.Employer.Name + ' - ' + job.Title">
+                            <strong>${job.Employer.Name}</strong>
+                             - ${job.Title}</span>
+                             <span class="separator"></span>
+                        <span class="job-duration" title.bind="job.FromDate | dateRange:job.UntilDate"> ${job.FromDate | dateRange:job.UntilDate} </span>
+                    </div>
+                    <div class="collapsible-body">
+                        <div class="address right">
+                            <google-map item.bind="job"></google-map>
+                            <span class="address-name">${job.Address}</span>
+                        </div>
+                        <div class="homepage">
+                            <a href.bind="job.HomepageUrl" target="_blank">${job.HomepageUrl}</a>
+                        </div>
+                        <div class="description">
+                            ${job.Description}
+                        </div>
+                        <tag-list tags.bind="job.Tags"></tag-list>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </md-card>
+</template>

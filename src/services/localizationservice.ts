@@ -45,6 +45,13 @@ export class LocalizationService {
 
     public static Localizations: LocalizedResource[] = [
         {
+            Key: "date-now",
+            Values: [
+                [Language.English, "now"],
+                [Language.Hungarian, "jelenleg"]
+            ]
+        },        
+        {
             Key: "cv-title",
             Values: [
                 [Language.English, "CV"],
@@ -92,8 +99,28 @@ export class LocalizationService {
                 [Language.English, "Close"],
                 [Language.Hungarian, "Bezár"]
             ]
-        },            
-        
+        },
+        {
+            Key: "jobs-title",
+            Values: [
+                [Language.English, "Career"],
+                [Language.Hungarian, "Munkatapasztalatok"]
+            ]
+        },
+        {
+            Key: "work-gyk-description-title",
+            Values: [
+                [Language.English, "Media watching, administrative tasks, system maintenance, supporting of the implementation of a new processes, communicating with the customers, team leadership"],
+                [Language.Hungarian, "Médiafigyelés, adminisztrációs feladatok, rendszerkarbantartás, új folyamatok bevezetésének támogatása, ügyfelekkel való napi kapcsolattartás, csoportvezetés"]
+            ]
+        },
+        {
+            Key: "work-gyk-description-title",
+            Values: [
+                [Language.English, "Media watching, administrative tasks, system maintenance, supporting of the implementation of a new processes, communicating with the customers, team leadership"],
+                [Language.Hungarian, "Médiafigyelés, adminisztrációs feladatok, rendszerkarbantartás, új folyamatok bevezetésének támogatása, ügyfelekkel való napi kapcsolattartás, csoportvezetés"]
+            ]
+        }
     ];
 
 

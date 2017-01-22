@@ -1,0 +1,13 @@
+.collapsible-header {
+
+  display: flex;
+
+  flex-direction: row;
+
+  .separator {
+    flex-grow: 1;
+  }
+
+  .job-duration {
+    }
+}

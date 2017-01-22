@@ -11,7 +11,4 @@ export class Schools {
     constructor(private localization: LocalizationService, schoolService: SchoolService) {
         this.Schools = schoolService.Get();
     }
-
-
-
 }
