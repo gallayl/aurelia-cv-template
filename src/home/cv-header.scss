@@ -19,10 +19,14 @@ md-navbar {
       flex-grow: 1;
 
       .button-links {
-        float: right;
-        margin-right: $margin-inner;
-        margin-top: 3px;
+        margin-right: 15px;
         text-align: right;
+        display: flex;
+        flex-direction: column;
+
+        @media print{
+          margin-top: 15px;
+        }
 
         .email,
         .phone,

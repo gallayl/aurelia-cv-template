@@ -113,7 +113,7 @@ export class LocalizationService {
                 [Language.English, "Developing and testing of an in-house production-management application using ASP.NET, Entity Framework, OData, Angular2 / Aurelia.IO and WebPack. Set up and maintain Continuous Delivery solutions with Team Foundation Server. Developing small individual systems."],
                 [Language.Hungarian, "A cég saját fejlesztésű gyártásirányítási szoftverének a fejlesztése és tesztelése ASP.NET, Entity Framework, OData, Angular2 / Aurelia.IO és WebPack alapokon, kisebb szigetrendszerek fejlesztése"]
             ]
-        },
+        },      
         {
             Key: "digic-project-dProject-description",
             Values: [
@@ -133,6 +133,41 @@ export class LocalizationService {
             Values: [
                 [Language.English, "A TER (Teljesítmény Értékelési Rendszer) a vállalat belső fejlesztésű, egyedi folyamatokra épülő teljesítmény értékelési rendszere."],
                 [Language.Hungarian, "The TER (Performance Review System) is the company's own employee rating system."]
+            ]
+        },
+        {
+            Key: "job-sensenet-responsibilities",
+            Values: [
+                [Language.English, "Developing an Enterprise Content Management with online document viewer feature, bulk import / export features with high scalability"],
+                [Language.Hungarian, "Nagyvállalati tartalomkezelő szoftver fejlesztése, online dokumentum előnézetek, tömeges import / export funkciókkal"]
+            ]
+        },
+        {
+            Key: "job-tesco-responsibilities",
+            Values: [
+                [Language.English, "Managing user accesses for all the systems, participating in integrating new systems and solutions to the company workflow. Created command line tools for IT Support (AD management and reporting, bulk user management, etc...). Developed some independent web applications for managing business processes using"],
+                [Language.Hungarian, "A felhasználók hozzáféréseinek kezelése az összes vállalati rendszerhez, részvétel az új rendszerek és IT megoldások bevezetésében és a vállalati folyamatokba való beillesztésében. Konzolos tool-ok fejlesztése az IT Support csapat részére (riportálás, bulk műveletek, stb...). Webes alkalmazások fejlesztése belső folyamatok kiszolgálására."]
+            ]
+        },    
+        {
+            Key: "tesco-project-itr-description",
+            Values: [
+                [Language.English, "This web application is for managing all of the (beforehand paper-based) IT Requests from the submitting to the closure. It includes a PC Device inventory and a training journal (which is a prerequisite for some application request), the data fields and the workflow phases can change dynamically. It also includes an interface to the HR systems for automatic approver calculation."],
+                [Language.Hungarian, "A szoftver a PC Support részére korábban papír- illetve e-mail alapon beérkezett eszköz- és hozzáférés igényeket ülteti át elektronikus formába. A szoftver képes több adatforrásból szinkronizálni a dolgozói adatokat illetve a hierarchiát, az igénylésekhez szükséges adatok, illetve a jóváhagyási lánc az adminisztrátorok által dinamikusan szerkeszthetőek, illetve a szoftver tárolja a különböző eszköz- és vizsgaadatokat is."]
+            ]
+        },                  
+        {
+            Key: "tesco-project-phone-description",
+            Values: [
+                [Language.English, "With this software, the private and company calls are separable and accountable. It includes a corporate phonebook and helps to administrate the device handovers and takeover."],
+                [Language.Hungarian, "A szoftver segítségével a vállalat dolgozói hozzáférhetnek a vállalati telefonkönyvhöz, nyilvántarthatják a telefonköltségeiket, valamint vállalati szinten kimutathatóak az egyes területek telefonköltségei."]
+            ]
+        },
+        {
+            Key: "tesco-project-poolcars-description",
+            Values: [
+                [Language.English, "The application was developed to manage the company’s pool car reservation processes for the Fleet Management Department"],
+                [Language.Hungarian, "A webalkalmazás a vállalati kulcsosautó-foglalási folyamatokat és az ezzel járó adminisztratív teendőket segíti a Flottakezelési osztály számára."]
             ]
         },        
         {

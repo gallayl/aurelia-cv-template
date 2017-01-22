@@ -1,26 +1,47 @@
 .job-container {
   & > .collapsible-header {
-
+    white-space: nowrap;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
 
     .separator {
       flex-grow: 1;
     }
+
+      .job-duration,
+      .job-name {
+        flex-grow: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      .job-duration{
+        text-align: right;       
+        min-width: 100px;
+      }
   }
 
   & > .collapsible-body {
+      &>.body-head{
+        display: flex;
+        flex-direction: row;
 
-      &>.logo{
-        margin: 10px;
+        &>.separator{
+          flex-grow:1;
+        }
+
+        &>.logo{
+          margin: 0 10px 10px 0;
+        }
+
+        &>.address{
+            margin-left: 25px;
+        }
+
       }
-
-      &>.address{
-          margin-left: 25px;
-      }
-
     & > .description {
-      min-height: 65px;
+      margin-bottom: 10px;
       text-align: justify;
     }
   }

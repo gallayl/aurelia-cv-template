@@ -13,10 +13,15 @@
                         <span class="job-duration" title.bind="job.FromDate | dateRange:job.UntilDate"> ${job.FromDate | dateRange:job.UntilDate} </span>
                     </div>
                     <div class="collapsible-body">
-                        <img class="left logo" src.bind="job.Employer.LogoUrl" alt="job-logo" height="64"/>
-                        <div class="address right">
-                            <google-map item.bind="job"></google-map>
-                            <span class="address-name">${job.Address}</span>
+                        <div class="body-head">
+                            <div class="logo">
+                                <img class="logo-image" src.bind="job.Employer.LogoUrl" alt="job-logo" height="50"/>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="address">
+                                <google-map item.bind="job"></google-map>
+                                <span class="address-name">${job.Address}</span>
+                            </div>                            
                         </div>
                         <div class="homepage">
                             <a href.bind="job.HomepageUrl" target="_blank">${job.HomepageUrl}</a>
