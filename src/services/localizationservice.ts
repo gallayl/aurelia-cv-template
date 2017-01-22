@@ -108,14 +108,42 @@ export class LocalizationService {
             ]
         },
         {
-            Key: "work-gyk-description-title",
+            Key: "job-digic-responsibilities",
+            Values: [
+                [Language.English, "Developing and testing of an in-house production-management application using ASP.NET, Entity Framework, OData, Angular2 / Aurelia.IO and WebPack. Set up and maintain Continuous Delivery solutions with Team Foundation Server. Developing small individual systems."],
+                [Language.Hungarian, "A cég saját fejlesztésű gyártásirányítási szoftverének a fejlesztése és tesztelése ASP.NET, Entity Framework, OData, Angular2 / Aurelia.IO és WebPack alapokon, kisebb szigetrendszerek fejlesztése"]
+            ]
+        },
+        {
+            Key: "digic-project-dProject-description",
+            Values: [
+                [Language.English, "The in-house production management software of Digic, used for almost every area in the company including task management, communication, HR processes and distributed rendering task management."],
+                [Language.Hungarian, "A Digic saját fejlesztésű gyártásirányítási szoftvere, a vállalat szinte összes területét érinti, ide értve a belső feladatkezelést, kommunikációt, HR folyamatokat és a renderek kiosztását."]
+            ]
+        },
+        {
+            Key: "digic-project-DPS-description",
+            Values: [
+                [Language.English, "DPS(dProject Services) has been started as a public in-house RESTful API for dProject, now it has an Angular2-based modern frontend UI aswell."],
+                [Language.Hungarian, "A DPS(dProject Services) egy publikus REST API-ként indult, jelenleg rendelkezik egy modernebb frontend-el is Angular2 alapokon."]
+            ]
+        },
+        {
+            Key: "digic-project-TER-description",
+            Values: [
+                [Language.English, "A TER (Teljesítmény Értékelési Rendszer) a vállalat belső fejlesztésű, egyedi folyamatokra épülő teljesítmény értékelési rendszere."],
+                [Language.Hungarian, "The TER (Performance Review System) is the company's own employee rating system."]
+            ]
+        },        
+        {
+            Key: "job-gyk-description-title",
             Values: [
                 [Language.English, "Media watching, administrative tasks, system maintenance, supporting of the implementation of a new processes, communicating with the customers, team leadership"],
                 [Language.Hungarian, "Médiafigyelés, adminisztrációs feladatok, rendszerkarbantartás, új folyamatok bevezetésének támogatása, ügyfelekkel való napi kapcsolattartás, csoportvezetés"]
             ]
         },
         {
-            Key: "work-gyk-description-title",
+            Key: "job-gyk-description-title",
             Values: [
                 [Language.English, "Media watching, administrative tasks, system maintenance, supporting of the implementation of a new processes, communicating with the customers, team leadership"],
                 [Language.Hungarian, "Médiafigyelés, adminisztrációs feladatok, rendszerkarbantartás, új folyamatok bevezetésének támogatása, ügyfelekkel való napi kapcsolattartás, csoportvezetés"]

@@ -1,13 +1,27 @@
-.collapsible-header {
+.job-container {
+  & > .collapsible-header {
 
-  display: flex;
+    display: flex;
+    flex-direction: row;
 
-  flex-direction: row;
-
-  .separator {
-    flex-grow: 1;
+    .separator {
+      flex-grow: 1;
+    }
   }
 
-  .job-duration {
+  & > .collapsible-body {
+
+      &>.logo{
+        margin: 10px;
+      }
+
+      &>.address{
+          margin-left: 25px;
+      }
+
+    & > .description {
+      min-height: 65px;
+      text-align: justify;
     }
+  }
 }

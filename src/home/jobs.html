@@ -1,9 +1,10 @@
 <template>
     <require from="./jobs.css"></require>
-    <md-card md-title.bind="'jobs-title' | translate">
-        <div class="collapsible-popout">
-            <ul md-collapsible="accordion: true; popout: true;">
-                <li repeat.for="job of Jobs">
+    <require from="./projects"></require>
+    <md-card md-title.bind="'jobs-title' | translate" md-image="/assets/dev-header-2.jpg">
+        <div class="collapsible-popout jobs-container">
+            <ul md-collapsible="accordion: false; popout: true;">
+                <li repeat.for="job of Jobs" class="job-container">
                     <div class="collapsible-header">
                         <span class="job-name" title.bind="job.Employer.Name + ' - ' + job.Title">
                             <strong>${job.Employer.Name}</strong>
@@ -12,6 +13,7 @@
                         <span class="job-duration" title.bind="job.FromDate | dateRange:job.UntilDate"> ${job.FromDate | dateRange:job.UntilDate} </span>
                     </div>
                     <div class="collapsible-body">
+                        <img class="left logo" src.bind="job.Employer.LogoUrl" alt="job-logo" height="64"/>
                         <div class="address right">
                             <google-map item.bind="job"></google-map>
                             <span class="address-name">${job.Address}</span>
@@ -20,8 +22,9 @@
                             <a href.bind="job.HomepageUrl" target="_blank">${job.HomepageUrl}</a>
                         </div>
                         <div class="description">
-                            ${job.Description}
+                            ${job.Responsibilities}
                         </div>
+                        <projects projects.bind="job.Projects"></projects>
                         <tag-list tags.bind="job.Tags"></tag-list>
                     </div>
                 </li>

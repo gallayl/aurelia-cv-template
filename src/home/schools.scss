@@ -1,3 +1,7 @@
+md-card > .au-target.card > .card-image {
+  height: 80px;
+}
+
 .collapsible-header {
   white-space: nowrap;
   overflow: hidden;
@@ -34,5 +38,4 @@
   a:hover {
     text-decoration: underline;
   }
-
 }

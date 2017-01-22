@@ -1,14 +1,14 @@
 <template>
     <require from="./schools.css"></require>
-    <md-card md-title.bind="'schools-title' | translate">
+    <md-card md-title.bind="'schools-title' | translate" md-image="/assets/dev-header.jpg">
         <div class="collapsible-popout">
-            <ul md-collapsible="accordion: true; popout: true;">
+            <ul md-collapsible="accordion: false; popout: true;">
                 <li repeat.for="school of Schools">
                     <div class="collapsible-header">
                         <span class="school-name" title.bind="school.Name + ' - ' + school.Type">
                             <strong>${school.Name}</strong>
                              - ${school.Type}</span>
-                        <span class="school-duration" title.bind="school.FromDate.getFullYear() + ' - ' + school.UntilDate.getFullYear()"> ${school.FromDate.getFullYear()} - ${school.UntilDate.getFullYear()} </span>
+                        <span class="school-duration" title.bind="school.FromDate | dateRange:school.UntilDate"> ${school.FromDate | dateRange:school.UntilDate} </span>
                     </div>
                     <div class="collapsible-body">
                         <div class="address right">

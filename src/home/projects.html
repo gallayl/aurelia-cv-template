@@ -1,0 +1,20 @@
+<template>
+    <require from="./projects.css"></require>
+    <div class="projects-container">
+        <div class="collapsible-popout">
+            <ul md-collapsible="accordion: false; popout: true;">
+                <li repeat.for="project of Projects">
+                    <div class="collapsible-header">
+                        ${project.Name}
+                    </div>
+                    <div class="collapsible-body">
+                        <div class="description">
+                            ${project.Description}
+                        </div>
+                        <tag-list tags.bind="project.Tags"></tag-list>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</template>
