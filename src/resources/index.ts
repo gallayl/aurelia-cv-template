@@ -5,6 +5,7 @@ export function configure(config: FrameworkConfiguration) {
   config.globalResources([
     './value-converters/translate',
     './elements/google-map',
-    './elements/fa-button-link'
+    './elements/fa-button-link',
+    "./elements/tag-list"
     ]);
 }

@@ -1,3 +1,4 @@
+import { Link } from '../models/types';
 import { LocalizationService } from './localizationservice';
 import { School } from '../models/school';
 import { autoinject } from 'aurelia-framework';
@@ -22,8 +23,10 @@ export class SchoolService {
                     { Name: "JQuery", Url: "" },
                     { Name: "Flash", Url: "" }
                 ],
-                MapQuery: "Lia+Iskola+Budapest,+Dolgos+utca+7,+1126",
-                Type: this.localization.Get("school-web-development")
+                LocationQuery: "Lia+Iskola+Budapest,+Dolgos+utca+7,+1126",
+                Address: "Budapest, Dolgos utca 7, 1126",
+                Type: this.localization.Get("school-web-development"),
+                HomepageUrl:"http://www.liaiskola.hu/"
             },
             {
                 Name: "Verebély László Szakközépiskola",
@@ -40,8 +43,10 @@ export class SchoolService {
                     { Name: "Photoshop basics", Url: "" },
 
                 ],
-                MapQuery: "BMSZC+Verebély+László+Szakgimnáziuma+és+Szakközépiskolája",
-                Type: this.localization.Get("school-vocational-generic") + ', ' + this.localization.Get("school-okj-general-programming")
+                LocationQuery: "BMSZC+Verebély+László+Szakgimnáziuma+és+Szakközépiskolája",
+                Address: "Budapest, Üteg u. 15, 1139",
+                Type: this.localization.Get("school-vocational-generic") + ', ' + this.localization.Get("school-okj-general-programming"),
+                HomepageUrl:"http://www.verebelyszki.hu/"
             }
         ]
     }

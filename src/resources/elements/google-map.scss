@@ -6,7 +6,15 @@
         text-align: left;
         color: #333;
         text-overflow: ellipsis;
-        overflow: hidden;        
+        overflow: hidden;
+        font-size: 1.5em;
+        font-weight: lighter;
+      }
+
+      .modal-close{
+        position:relative;
+        top: -20px;
+        left: 17px;
       }
 
       .mapFrame{

@@ -17,33 +17,19 @@
 }
 
 .collapsible-body {
-
-  display: flex;
-  flex-direction: row;
-
-    @media screen and (max-width: 710px) {
-      display: block;
-    }  
-
-  .description,
-  iframe {
-    @media screen and (max-width: 710px) {
-      display: block;
-      width: 100%;
-    }
-
-  }
-
-  .description {
-    flex-grow: 1;
-    .tags{
-        margin: 10px;
+  .address {
+    google-map {
+      display: inline-block;
     }
   }
 
-  iframe {
+  .tags{
+    padding: 20px;
 
-    flex-grow: 1;
-    margin: 10px;
+    .tag{
+      margin: 0 5px;
+      text-decoration: underline;
+      color: cornflowerblue;
+    }
   }
 }

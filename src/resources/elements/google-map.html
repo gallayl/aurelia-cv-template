@@ -1,21 +1,21 @@
 <template>
   <require from="./google-map.css"></require>
-  <fa-button-link title.bind="Address"
+  <fa-button-link title.bind="Item.Address"
                   icon-name="fa-map-marker" 
-                  link-url.bind="'#'+Guid">
+                  click.delegate="openMap($event)">
   </fa-button-link>
   <div class="modal-container">
-    <div class="maps-modal" id="${Guid}" md-modal="dismissible: false;">
+    <div class="maps-modal" md-modal="dismissible: false;" md-modal.ref="modal">
       <div class="modal-content">
-        <h4>${Address}</h4>
+        <a md-button="floating: true;" md-waves="color: accent;" class="right modal-action modal-close" title.bind="'button-close' | translate">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+        <h4 title.bind="Address">${Item.Address}</h4>
         <iframe class="mapFrame" 
                 height="450" 
                 frameborder="0" 
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBe7lzmO9QZluA6UzpTRi9RjG8pbwgw740 &q=${Query}" 
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBe7lzmO9QZluA6UzpTRi9RjG8pbwgw740 &q=${Item.LocationQuery}" 
                 allowfullscreen="true"></iframe>
-      </div>
-      <div class="modal-footer">
-        <a click.delegate="agree()" md-button="flat: true;" md-waves="color: accent;" class="modal-action modal-close">${'button-close' | translate}</a>
       </div>
     </div>
   </div>

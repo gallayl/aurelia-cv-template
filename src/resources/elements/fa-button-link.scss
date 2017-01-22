@@ -2,7 +2,6 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
     .text{
         text-shadow: 1px 1px 15px black;
     }
@@ -10,9 +9,9 @@
     a {
       box-shadow: 1px 1px 3px 0 black;
       margin: 5px;
-
       i {
         line-height: inherit !important;
+        width: 100%;
       }
     }
   }

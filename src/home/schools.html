@@ -11,23 +11,19 @@
                         <span class="school-duration" title.bind="school.FromDate.getFullYear() + ' - ' + school.UntilDate.getFullYear()"> ${school.FromDate.getFullYear()} - ${school.UntilDate.getFullYear()} </span>
                     </div>
                     <div class="collapsible-body">
-                        <div class="description"> 
-                            ${school.Description}
-                            <div class="tags">
-                                <span class="tag" repeat.for="tag of school.Tags">${tag.Name}</span>
-                            </div>
+                        <div class="address ">
+                            <google-map item.bind="school"></google-map> ${school.Address}
                         </div>
-
-                        <iframe if.bind="school.MapQuery.length" class="mapFrame" 
-                                
-                                height="450" 
-                                frameborder="0" 
-                                style="border:0" 
-                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBe7lzmO9QZluA6UzpTRi9RjG8pbwgw740 &q=${school.MapQuery}" 
-                                allowfullscreen="true" />
-</div>
-</li>
-</ul>
-</div>
-</md-card>
+                        <div class="homepage">
+                            <fa-button-link icon-name="fa-external-link" link-url.bind="school.HomepageUrl" title.bind="school.HomepageUrl" target="_blank"></fa-button-link> <a href.bind="school.HomepageUrl" target="_blank">${school.HomepageUrl}</a>
+                        </div>
+                        <div class="description">
+                            ${school.Description}
+                        </div>
+                        <tag-list tags.bind="school.Tags"></tag-list>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </md-card>
 </template>
