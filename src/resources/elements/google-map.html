@@ -2,7 +2,8 @@
   <require from="./google-map.css"></require>
   <fa-button-link title.bind="Item.Address"
                   icon-name="fa-map-marker" 
-                  click.delegate="openMap($event)">
+                  click.delegate="openMap($event)"
+                  class="map-link-button">
   </fa-button-link>
   <div class="modal-container">
     <div class="maps-modal" md-modal="dismissible: false;" md-modal.ref="modal">

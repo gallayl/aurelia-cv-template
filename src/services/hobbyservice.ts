@@ -45,7 +45,7 @@ export class HobbyService {
                 ImageUrl: "./assets/photo-music.jpeg",
                 Tags: [
                     { Name: "Beastial Rage", Url: "https://beastialrage.bandcamp.com/" },
-                    { Name: "Automn Wings", Url: "" },
+                    { Name: "Autumn Wings", Url: "" },
                     { Name: "Ideas", Url: "https://www.facebook.com/IdeasOfficial/" },
                 ]
             }];

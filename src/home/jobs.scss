@@ -5,41 +5,53 @@
     display: flex;
     flex-direction: row;
 
+    .logo {
+      position: relative;
+      top: 10px;
+      margin-right: 17px;
+    }
+
     .separator {
       flex-grow: 1;
     }
 
-      .job-duration,
-      .job-name {
-        flex-grow: 1;
-        text-overflow: ellipsis;
-        overflow: hidden;
-      }
+    .job-duration,
+    .job-name {
+      flex-grow: 1;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
 
-      .job-duration{
-        text-align: right;       
-        min-width: 100px;
-      }
+    .job-duration {
+      text-align: right;
+      min-width: 100px;
+    }
   }
 
   & > .collapsible-body {
-      &>.body-head{
-        display: flex;
-        flex-direction: row;
+    & > .body-head {
+      display: flex;
+      flex-direction: row;
 
-        &>.separator{
-          flex-grow:1;
-        }
-
-        &>.logo{
-          margin: 0 10px 10px 0;
-        }
-
-        &>.address{
-            margin-left: 25px;
-        }
-
+      & > .separator {
+        flex-grow: 1;
       }
+
+      & > .logo {
+        margin: 0 10px 10px 0;
+      }
+
+      & > .address {
+        margin-left: 25px;
+        & > google-map .map-link-button a{
+            transform: scale(.7);
+            position: relative;
+            top: -3px;
+        }
+      }
+
+    }
+
     & > .description {
       margin-bottom: 10px;
       text-align: justify;

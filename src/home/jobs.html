@@ -5,18 +5,22 @@
         <div class="collapsible-popout jobs-container">
             <ul md-collapsible="accordion: false; popout: true;">
                 <li repeat.for="job of Jobs" class="job-container print-one-page">
-                    <div class="collapsible-header">
+                    <div class="collapsible-header active ">
                         <span class="job-name" title.bind="job.Employer.Name + ' - ' + job.Title">
-                            <strong>${job.Employer.Name}</strong>
-                             - ${job.Title}</span>
+                            <a class="logo" href.bind="job.Employer.HomePage" target="_blank">
+                                <img class="logo-image" src.bind="job.Employer.LogoUrl" alt="job-logo" height="32"/>
+                            </a>
+                            
+                             <span class="position">
+                                 ${job.Title}
+                             </span>
+                             </span>
                              <span class="separator"></span>
                         <span class="job-duration" title.bind="job.FromDate | dateRange:job.UntilDate"> ${job.FromDate | dateRange:job.UntilDate} </span>
                     </div>
                     <div class="collapsible-body">
                         <div class="body-head">
-                            <div class="logo">
-                                <img class="logo-image" src.bind="job.Employer.LogoUrl" alt="job-logo" height="50"/>
-                            </div>
+                            
                             <div class="separator"></div>
                             <div class="address">
                                 <google-map item.bind="job"></google-map>
