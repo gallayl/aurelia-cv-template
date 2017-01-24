@@ -1,23 +1,23 @@
 .hobbyItem {
   .collapsible-body {
+    .flex-container {
+      display: flex !important;
+      flex-direction: row;
 
-    display: flex !important;
-    flex-direction: row;
+      .hobby-image {
+        border-radius: 50%;
+        overflow: hidden;
+        display: inline-block;
+        height: 64px;
+        width: 64px;
+        margin-right: 15px;
+        box-shadow: 1px 1px 5px 0 black;
 
-    .hobby-image {
-      border-radius: 50%;
-      overflow: hidden;
-      display: inline-block;
-      height: 64px;
-      width: 64px;
-      margin-right: 15px;
-      box-shadow: 1px 1px 5px 0 black;
-
-      img {
-        will-change: initial !important;
-        transition-duration: 0ms !important;
+        img {
+          will-change: initial !important;
+          transition-duration: 0 !important;
+        }
       }
     }
-
   }
 }

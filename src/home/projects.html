@@ -2,9 +2,9 @@
     <require from="./projects.css"></require>
     <div class="projects-container print-one-page">
         <div class="collapsible-popout active">
-            <ul md-collapsible="accordion: false; popout: true;">
+            <ul md-collapsible="accordion: false;">
                 <li repeat.for="project of Projects">
-                    <div class="collapsible-header">
+                    <div class="collapsible-header active">
                         ${project.Name}
                     </div>
                     <div class="collapsible-body">

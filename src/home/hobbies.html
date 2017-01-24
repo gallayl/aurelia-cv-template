@@ -2,18 +2,20 @@
     <require from="./hobbies.css"></require>
     <md-card class="print-one-page" md-title.bind="'hobbies-title' | translate" md-image="./assets/dev-header.jpg">
         <div class="collapsible-popout">
-            <ul md-collapsible="">
+            <ul md-collapsible="accordion: false;">
                 <li repeat.for="hobby of Hobbies" class="hobbyItem">
                     <div class="collapsible-header active">
                         <span class="skill-name" title.bind="hobby.Name | translate">
                             ${hobby.Name  | translate}
                         </span>
                     </div>
-                    <div class="collapsible-body" back>
-                        <div class="hobby-image">
-                            <img md-box src.bind="hobby.ImageUrl" height="64px">
+                    <div class="collapsible-body">
+                        <div class="flex-container">
+                            <div class="hobby-image">
+                                <img md-box src.bind="hobby.ImageUrl" height="64px">
+                            </div>
+                            <tag-list tags.bind="hobby.Tags"></tag-list>
                         </div>
-                        <tag-list tags.bind="hobby.Tags"></tag-list>
                     </div>
                 </li>
             </ul>
