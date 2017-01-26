@@ -8,7 +8,7 @@
   <div class="modal-container">
     <div class="maps-modal" md-modal="dismissible: false;" md-modal.ref="modal">
       <div class="modal-content">
-        <a md-button="floating: true;" md-waves="color: accent;" class="right modal-action modal-close" title.bind="'button-close' | translate">
+        <a md-button="floating: true;" md-waves="color: accent;" class="right modal-action modal-close" title.bind="'button-close' | translate & signal:'language-changed'">
           <i class="fa fa-times" aria-hidden="true"></i>
         </a>
         <h4 title.bind="Address">${Item.Address}</h4>

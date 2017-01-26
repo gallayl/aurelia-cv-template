@@ -1,7 +1,7 @@
 <template>
     <require from="./jobs.css"></require>
     <require from="./projects"></require>
-    <md-card md-title.bind="'jobs-title' | translate" md-image="./assets/dev-header.jpg">
+    <md-card md-title.bind="'jobs-title' | translate & signal:'language-changed'" md-image="./assets/dev-header.jpg">
         <div class="collapsible-popout jobs-container">
             <ul md-collapsible="accordion: false; popout: true;">
                 <li repeat.for="job of Jobs" class="job-container print-one-page">
@@ -34,7 +34,7 @@
                             <a href.bind="job.HomepageUrl" target="_blank">${job.HomepageUrl}</a>
                         </div>
                         <div class="description">
-                            ${job.Responsibilities | translate}
+                            ${job.Responsibilities | translate & signal:'language-changed'}
                         </div>
                         <projects projects.bind="job.Projects"></projects>
                         <tag-list tags.bind="job.Tags"></tag-list>

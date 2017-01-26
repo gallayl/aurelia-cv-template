@@ -1,12 +1,12 @@
 <template>
     <require from="./skills.css"></require>
-    <md-card class="print-one-page" md-title.bind="'skills-title' | translate" md-image="./assets/dev-header-3.jpg">
+    <md-card class="print-one-page" md-title.bind="'skills-title' | translate & signal:'language-changed'" md-image="./assets/dev-header-3.jpg">
         <div class="collapsible-popout">
             <ul md-collapsible="">
                 <li repeat.for="skill of Skills">
                     <div class="collapsible-header active">
-                        <span class="skill-name" title.bind="skill.Name | translate">
-                            ${skill.Name  | translate}
+                        <span class="skill-name" title.bind="skill.Name | translate & signal:'language-changed'">
+                            ${skill.Name  | translate & signal:'language-changed'}
                         </span>
                     </div>
                     <div class="collapsible-body">

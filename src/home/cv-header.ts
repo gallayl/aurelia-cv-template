@@ -3,6 +3,7 @@ import { LocalizationService } from '../services/localizationservice';
 import { Link, LocalizedString } from '../models/types';
 import { bindable, autoinject } from 'aurelia-framework';
 import { Owner } from '../models/owner';
+import {BindingSignaler} from 'aurelia-templating-resources';
 
 @autoinject
 export class CvHeader {
@@ -11,18 +12,18 @@ export class CvHeader {
 
   public setLanguageEnglish(){
     this.localization.currentLanguage = LocalizationLanguage.English;
-    window.location.reload(); //todo: fixme;
+    this.signaler.signal('language-changed');
   }
 
   public setLanguageHungarian(){
     this.localization.currentLanguage = LocalizationLanguage.Hungarian;
-    window.location.reload(); //todo: fixme;
+    this.signaler.signal('language-changed');
   }
 
   print(){
     window.print();
   }
 
-  constructor(private localization: LocalizationService) { }
+  constructor(private localization: LocalizationService, private signaler: BindingSignaler) { }
 }
 
