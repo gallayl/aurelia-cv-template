@@ -61,6 +61,10 @@ md-navbar {
         width: 100%;
       }
 
+      .language-selector a{
+          text-decoration: underline;
+      }
+
       .title {
         font-size: 1.8em;
         margin-top: $margin-inner;

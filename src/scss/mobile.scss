@@ -1,20 +1,48 @@
 @media screen and (max-width: 600px) {
   body > router-view > cv-header > md-navbar.header-container > div.au-target > nav {
-    height: 285px !important;
+    height: 305px !important;
     background-repeat: no-repeat;
     background-size: cover;
 
     div.head-left {
       div.language-selector {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+
         a {
-          padding: 5px 0 0 0;
+          width: 49%;
+          padding: 5px 0 0;
           display: block;
         }
       }
 
       div.button-links {
+        margin-top: 0;
         position: absolute;
       }
+    }
+
+    div.head-center {
+      .button-links {
+        position: absolute;
+        flex-direction: row;
+        bottom: 0;
+        left: 15px;
+
+        .button-link {
+          margin-right: 2px;
+        }
+      }
+    }
+
+    div.head-right {
+      height: 100px;
+      min-width: 100px;
+      width: 100px;
+      margin-right: 30px;
+      margin-top: 10px;
     }
   }
 }
